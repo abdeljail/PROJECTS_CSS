@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #313641;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+.form {
+  background-color: #313641;
+  padding: 10px 16px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 35px 26px #252930, 0px 0px 17px 6px #3d424c inset;
+  width: 280px;
+}
+.form h2 {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.form > div,
+.form > div > div {
+  padding: 4px 0;
+}
+.form > div > div label {
+  color: #fff;
+  text-transform: capitalize;
+  display: block;
+  padding: 6px 0;
+  font-size: 12px;
+}
+.form > div > div label span {
+  color: #252930;
+}
+.form > div > div > div {
+  padding: 6px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form > div > div > div span {
+  margin-right: 10px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 0 11px #252930;
+}
+.form > div > div > div span img {
+  width: 20px;
+  height: 20px;
+}
+.form > div > div > div input {
+  padding: 10px 16px;
+  border-radius: 4px;
+  flex-grow: 2;
+}
+.form > div > div:last-child {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 20px;
+  padding: 16px 10px;
+}
+.form > div > div:last-child button {
+  padding: 10px 16px;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  background-color: #ff5722;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0px 5px 4px 0px #1d1a1a, 0px 0px 13px 2px #a73c1b inset;
+}
