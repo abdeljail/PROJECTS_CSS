@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: rgb(255, 255, 255);
+}
+h1 {
+  padding: 20px 0;
+  text-align: center;
+  font-size: calc(6vw - 10px);
+}
+.container-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+.container-card .card {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f8f7f7;
+  width: 200px;
+}
+.container-card .card .content > div:first-child {
+  background-color: #2196f3;
+  padding: 10px;
+  border-radius: 8px;
+  height: 200px;
+  color: #f8f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+.container-card .card .content strong {
+  padding: 10px 0;
+  display: block;
+  text-transform: capitalize;
+}
+.animated {
+  width: 300%;
+  height:100%;
+  background-color: #2196f3;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  z-index: -1;
+  animation: 20s animated ease-in-out infinite alternate;
+}
+
+@keyframes animated {
+  0% {
+    transform: skew(0deg, -10deg) translateX(-50%);
+  }
+  100% {
+    transform: skew(277deg, 0deg) translateX(-30%);
+  }
+}
